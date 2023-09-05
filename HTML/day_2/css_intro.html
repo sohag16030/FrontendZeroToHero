@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Download Bar Color and Button</title>
+  <style>
+    /* Style for the progress container */
+    .progress-container {
+      width: 300px;
+      height: 20px;
+      background-color: #ccc;
+      margin-bottom: 20px;
+      /* Add spacing between the bar and button */
+    }
+
+    /* Style for the progress bar (inner element) */
+    .progress-bar {
+      width: 50%;
+      /* Initial progress width (adjust as needed) */
+      height: 100%;
+      background-color: rgb(8, 0, 255);
+      /* Change the bar color to red */
+      transition: width 1s ease;
+      /* Smooth transition for width changes */
+    }
+
+    /* Style for the text inside the progress bar */
+    .progress-text {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      /* Change text color here */
+    }
+
+    /* Style for the download button */
+    .download-button {
+      background-color: green;
+      /* Change the button color to green */
+      color: white;
+      /* Change text color of the button */
+      padding: 10px 10px;
+      /* Add padding to the button */
+      border: none;
+      /* Set border style, color (red in this example), and width */
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>File Download</h1>
+
+  <!-- Progress Bar Container -->
+  <div class="progress-container">
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+    <!-- Text inside the progress bar (optional) -->
+    <div class="progress-text">50%</div>
+  </div>
+
+  <!-- Download Button -->
+  <button class="download-button">Start Download</button>
+</body>
+
+</html>
