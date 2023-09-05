@@ -1,0 +1,23 @@
+/* styles.css */
+
+/* Style for "PEMIS" */
+.header-blue {
+    color: rgb(34, 0, 255);
+    font-weight: bold; /* Make "PEMIS" bold */
+}
+
+/* Style for "Primary Education Management Information System" */
+.header-black {
+    color: black;
+}
+
+/* Style for the header container */
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Add space between the elements */
+.header-container h1 {
+    margin-right: 10px; /* Adjust the margin as needed for spacing */
+}
