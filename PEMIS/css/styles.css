@@ -2,13 +2,17 @@
 
 /* Style for "PEMIS" */
 .header-blue {
-    color: rgb(34, 0, 255);
-    font-weight: bold; /* Make "PEMIS" bold */
+    color: #0084FF;
+    font-weight: 950; /* Make "PEMIS" bold */
+    font-family: Inter, sans-serif;
+    letter-spacing :-0.1rem;
 }
 
 /* Style for "Primary Education Management Information System" */
 .header-black {
     color: black;
+    font-family: Inter, sans-serif;
+    font-size: 17px;
 }
 
 /* Style for the header container */
