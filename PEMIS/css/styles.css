@@ -3,16 +3,20 @@
 /* Style for "PEMIS" */
 .header-blue {
     color: #0084FF;
-    font-weight: 950; /* Make "PEMIS" bold */
+    font-weight: bolder; /* Make "PEMIS" bold */
     font-family: Inter, sans-serif;
-    letter-spacing :-0.1rem;
+    font-size: 60px;
+    padding-top: -20px;
+    padding-right: 10px; /* Set right padding to 10px */
+    padding-bottom: 5px; /* Set bottom padding to 5px */
+    padding-left: 10px;
 }
 
 /* Style for "Primary Education Management Information System" */
 .header-black {
     color: black;
     font-family: Inter, sans-serif;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 /* Style for the header container */
@@ -25,3 +29,17 @@
 .header-container h1 {
     margin-right: 10px; /* Adjust the margin as needed for spacing */
 }
+
+/* Style for the logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the logo images */
+.logo {
+    max-width: 70px; /* Increase the maximum width to make them bigger */
+    margin-left: 10px; /* Add margin to separate the logos from the text */
+}
+
+
