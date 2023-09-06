@@ -160,7 +160,7 @@ p {
 }
 
 /* Header desing */
-img, svg {
+/* img, svg {
     vertical-align: middle;
     height: 75px;
     width: 70px;
@@ -172,4 +172,4 @@ img, svg {
     z-index: 1000;
     -webkit-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-}
+} */
