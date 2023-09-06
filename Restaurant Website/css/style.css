@@ -151,7 +151,9 @@ p {
 .text-content {
     width: 70%;
     margin: auto;
+    overflow: auto; /* Add this line to enable scrollbars if content overflows */
 }
+
 
 .counter-section h2,
 .testimonial-section h2,
@@ -160,16 +162,6 @@ p {
 }
 
 /* Header desing */
-/* img, svg {
-    vertical-align: middle;
-    height: 75px;
-    width: 70px;
+.navbar-brand{
+    height: 10px;
 }
-.navigation-wrap {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    -webkit-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s;
-} */
