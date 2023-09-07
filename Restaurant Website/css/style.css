@@ -107,7 +107,7 @@ p {
     display: inline-block;
     padding: 0.625rem 1.875rem;
     line-height: 1.5625rem;
-    background-color: #2cab9c;
+    background-color: var(--primary-color);
     border: 0.1875rem solid var(--primary-color);
     color: var(--white-color);
     font-size: 0.9375rem;
@@ -151,7 +151,8 @@ p {
 .text-content {
     width: 70%;
     margin: auto;
-    overflow: auto; /* Add this line to enable scrollbars if content overflows */
+    overflow: auto;
+    /* Add this line to enable scrollbars if content overflows */
 }
 
 
@@ -163,3 +164,12 @@ p {
 
 /* Header desing */
 
+.navbar-nav .nav-item .nav-link {
+    color: var(--text-color); /* Set the default text color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Change the text color on hover */
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(0, 255, 42); /* Change the text color to blue when hovered */
+}
