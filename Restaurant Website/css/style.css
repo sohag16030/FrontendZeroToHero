@@ -50,7 +50,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0.625rem;
+    width: 0.7000rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -162,6 +162,4 @@ p {
 }
 
 /* Header desing */
-.navbar-brand{
-    height: 10px;
-}
+
