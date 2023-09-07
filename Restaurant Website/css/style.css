@@ -29,7 +29,7 @@ ol {
 
 /* variables defines */
 :root {
-    --primary-color: #2cab43;
+    --primary-color: #ab2c96;
     --secondary-color: #30040f;
     --third-color: #ee4e43;
     --white-color: #f1eaec;
@@ -105,7 +105,7 @@ p {
 
 .main-btn {
     display: inline-block;
-    padding: 0.625rem 1.875rem;
+    padding: 0.525rem 1.075rem;
     line-height: 1.5625rem;
     background-color: var(--primary-color);
     border: 0.1875rem solid var(--primary-color);
@@ -123,11 +123,11 @@ p {
 
 .white-btn {
     display: inline-block;
-    padding: 0.625rem 1.875rem;
+    padding: 0.525rem 1.075rem;
     line-height: 1.5625rem;
-    background-color: var(--text-color);
-    border: 0.1875rem solid var(--text-color);
-    color: var(--text-color);
+    background-color: var(--white-color);
+    border: 0.1875rem solid var(--white-color);
+    color: var(--black-color);
     font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
@@ -163,13 +163,48 @@ p {
 }
 
 /* Header desing */
+.navbar-toggle:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: non;
+}
+
+.nav-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
 
 .navbar-nav .nav-item .nav-link {
-    color: var(--text-color); /* Set the default text color */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    color: var(--text-color);
+    /* Set the default text color */
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
 }
 
 /* Change the text color on hover */
 .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(0, 255, 42); /* Change the text color to blue when hovered */
+    color: rgb(0, 255, 42);
+    /* Change the text color to blue when hovered */
+}
+
+/* change navbar style on scroll */
+.navigation-wrap .scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.top-banner {
+    height: 100%;
+    width: 90%;
+    background: url('../images/bg/bg-1.png') no-repeat center;
+    background-size: cover;
+    padding-left: 100px;
 }
