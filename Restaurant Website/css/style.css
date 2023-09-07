@@ -202,9 +202,7 @@ p {
 }
 
 .top-banner {
-    height: 100%;
     width: 90%;
-    background: url('../images/bg/bg-1.png') no-repeat center;
+    background: url('../images/bg/bg-01.jpg') no-repeat center;
     background-size: cover;
-    padding-left: 100px;
 }
