@@ -201,8 +201,20 @@ p {
     transition: all 0.15s ease-in-out 0s;
 }
 
+/* top banner design */
 .top-banner {
     width: 100%;
-    background: url('../images/bg/bg-01.jpg') no-repeat center;
+    background: url('../images/bg/bg-1.jpg') no-repeat center;
     background-size: cover;
+}
+
+/* counter desing */
+.counter-section {
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p {
+    color: var(--white-color);
+    text-transform: uppercase;
 }
