@@ -29,7 +29,7 @@ ol {
 
 /* variables defines */
 :root {
-    --primary-color: #ab2c96;
+    --primary-color: #ab2c37;
     --secondary-color: #30040f;
     --third-color: #ee4e43;
     --white-color: #f1eaec;
@@ -217,4 +217,8 @@ p {
 .counter-section p {
     color: var(--white-color);
     text-transform: uppercase;
+}
+
+.plus-icon {
+    margin-left: -10px;
 }
