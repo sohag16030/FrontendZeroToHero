@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let nav = document.querySelector(".navigation-wrap");
     window.onscroll = function () {
-        console.log("Now Scroll event fired!"); // Debugging line
+        console.log("Now Scroll event is fired!"); // Debugging line
         if (document.documentElement.scrollTop > 20) {
             nav.classList.add("scroll-on");
         } else {

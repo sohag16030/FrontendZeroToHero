@@ -1,5 +1,3 @@
-@import url('https //fonts.googleapis.com/css family=quicksand &display=swap');
-
 *,
 *::after,
 *::before {
@@ -163,7 +161,20 @@ p {
 }
 
 /* Header desing */
-.navbar-toggle:focus {
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
     outline: unset;
     border: unset;
     box-shadow: non;
@@ -175,6 +186,11 @@ p {
     text-transform: capitalize;
     color: var(--primary-color);
     letter-spacing: 1px;
+}
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
 }
 
 .navbar-nav .nav-item .nav-link {
