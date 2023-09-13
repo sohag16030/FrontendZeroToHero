@@ -1,4 +1,17 @@
+
 // active navbar
+document.addEventListener("DOMContentLoaded", function () {
+    let nav = document.querySelector(".navigation-wrap");
+    window.onscroll = function () {
+        console.log("Now Scroll event fired!"); // Debugging line
+        if (document.documentElement.scrollTop > 20) {
+            nav.classList.add("scroll-on");
+        } else {
+            nav.classList.remove("scroll-on");
+        }
+    }
+});
+
 
 // nav hide
 
@@ -10,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             range = end - start,
             increment = end > start ? 1 : -1,
             step = Math.abs(Math.floor(duration / range)),
+            
             timer = setInterval(() => {
                 current += increment; // Update current by adding increment
                 obj.textContent = current;
