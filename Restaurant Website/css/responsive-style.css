@@ -8,6 +8,7 @@
     /* navbar brand */
     .navigation-wrap .navbar-brand img {
         height: 3.8125rem;
+        width: 4.8112rem;
     }
 
     .navigation-wrap {
@@ -17,5 +18,24 @@
 
     .navigation-wrap .nav-link {
         line-height: 1.87rem;
+    }
+    #orderNow{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 767px){
+    /* custom css */
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 2rem;
+        line-height: 2.0625rem;
+    }
+
+    /* top banner */
+    .top-banner{
+        padding: 10.875rem 0 9.375rem;
     }
 }

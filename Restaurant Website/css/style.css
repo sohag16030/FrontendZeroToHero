@@ -217,11 +217,10 @@ p {
     transition: all 0.15s ease-in-out 0s;
 }
 
-/* top banner design */
-.top-banner {
-    width: 100%;
-    background: url('../images/bg/bg-1.png') no-repeat center;
-    background-size: cover;
+/* top banner design  */
+ .top-banner img{
+    height: 500px;
+    width: 550px;
 }
 
 /* counter desing */
