@@ -1,4 +1,4 @@
-@media(max-width:991px) {
+@media(max-width:992px) {
 
     /* custom classes */
     .text-content {
@@ -19,12 +19,10 @@
     .navigation-wrap .nav-link {
         line-height: 1.87rem;
     }
-    #orderNow{
-        margin-bottom: 30px;
-    }
+  
     .top-banner img{
         height: 450px;
-        width: 290px;
+        width: 390px;
     }
 }
 
