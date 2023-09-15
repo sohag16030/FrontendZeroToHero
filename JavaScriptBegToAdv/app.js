@@ -22,3 +22,9 @@ function addNumber(num1,num2){
 }
 
 console.log(addNumber(100,"20"));
+
+//concatination
+const myAge =20;
+console.log("My age is :"+ myAge)
+
+console.log('hello it\'s me');
