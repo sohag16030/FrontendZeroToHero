@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+
+        /* Page background color */
+        body {
+            background-color: #6b6767;
+        }
+
+        /* Container to center the CV on the page */
+        .cv-container {
+            max-width: 21cm; /* A4 size width */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 0;
+            border-top: 3px solid blue; /* Vertical border on top */
+            background-color: #fff; /* Background color for the second part */
+        }
+
+        /* First part (col-lg-3) */
+        .navy-bg {
+            background-color: navy;
+            padding: 20px;
+        }
+
+        /* Second part (col-lg-9) */
+        .white-bg {
+            padding: 20px;
+        }
+
+        /* Attachment icon on the vertical border */
+        .attachment-icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 5px;
+            background-color: blue;
+            color: #fff;
+        }
+
+        /* Header section */
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Main content section */
+        .main-content {
+            padding: 20px;
+        }
+
+        /* Personal information section */
+        .personal-info {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Work experience section */
+        .work-experience {
+            margin-bottom: 20px;
+        }
+
+        /* Skills section */
+        .skills {
+            margin-bottom: 20px;
+        }
+
+        /* Footer section */
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container to center the CV on the page -->
+    <div class="container-fluid cv-container">
+        <!-- Vertical border and attachment icon -->
+        <div class="attachment-icon">
+            <i class="fa-solid fa-paperclip"></i> <!-- You can replace this with your attachment icon -->
+        </div>
+
+        <!-- Row for the two parts (col-lg-3 and col-lg-9) -->
+        <div class="row">
+            <!-- First part (col-lg-3) with navy background -->
+            <div class="col-lg-3 navy-bg">
+                <h3>Left Part</h3>
+                <p>This is the left part with navy background.</p>
+            </div>
+            
+            <!-- Second part (col-lg-9) with white background -->
+            <div class="col-lg-9 white-bg">
+                <!-- Header -->
+                <header class="header">
+                    <h1>Your Name</h1>
+                    <p>Web Developer</p>
+                </header>
+
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Personal Information -->
+                    <div class="personal-info">
+                        <h2>Personal Information</h2>
+                        <p><strong>Email:</strong> youremail@example.com</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Address:</strong> 123 Street Name, City, Country</p>
+                    </div>
+
+                    <!-- Work Experience -->
+                    <div class="work-experience">
+                        <h2>Work Experience</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Web Developer</h4>
+                                <p>Company XYZ - City, Country</p>
+                                <p>June 2020 - Present</p>
+                                <ul>
+                                    <li>Developed and maintained web applications.</li>
+                                    <li>Collaborated with cross-functional teams to achieve project goals.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Front-end Developer</h4>
+                                <p>Company ABC - City, Country</p>
+                                <p>January 2018 - May 2020</p>
+                                <ul>
+                                    <li>Designed and implemented user interfaces for websites.</li>
+                                    <li>Optimized web applications for performance and responsiveness.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Bootstrap, jQuery</li>
+                            <li>Responsive Web Design</li>
+                            <li>Web Development Tools (e.g., Visual Studio Code)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Footer -->
+                <footer class="footer">
+                    <p>&copy; 2023 Your Name</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS scripts if needed -->
+    <!-- You may also need to include an icon library like Font Awesome for the paperclip icon -->
+</body>
+</html>

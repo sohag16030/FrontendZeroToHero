@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(11 13 24 / 73%);
+}
+
+/* Container to center the CV on the page */
+.cv-container {
+    max-width: 21cm; /* A4 size width */
+    margin-top: 5%; /* Center the container horizontally */
+    padding: 0;
+    background-color: #fff; /* Background color for the second part */
+}
+
+/* First part (col-lg-3) */
+.navy-bg {
+    background-color:#2B3743;
+    padding: 20px;
+    margin-left: 0.650rem;
+}
+.card .card-body{
+    background-color: rgb(51, 106, 177);
+}
+.horizontal-border {
+    margin-top: 10px;
+    height: 3px; /* Set the desired height for the border */
+    background-color: blue; /* Set the border color */
+}
