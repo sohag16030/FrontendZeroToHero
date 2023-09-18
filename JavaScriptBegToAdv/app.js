@@ -85,4 +85,35 @@ const person = {
 function changeInnerHtmlFunction(){
   document.getElementById("demo").innerHTML="Paragraph changed.";
 }
+// <!-- Shift Assignment Operators -->
+// Note ::
+// the vacant bit positions on the left are filled with the original sign bit (0 for positive numbers and 1 for negative numbers). 
+
+let num = 5; // Binary: 00000101
+
+num <<= 2;  // Shift left by 2 positions
+// Binary after shift: 00010100
+// Decimal: 20
+
+console.log(num); // Output: 20
+
+let num2 = -16; // Binary: 11110000
+
+num2 >>= 2;  // Shift right by 2 positions
+// Binary after shift: 11111100 // shifted position will be filled with the sign bit
+// Decimal: -4
+
+console.log(num2); // Output: -4
+
+let num3 = -16; // Binary: 11110000
+
+num3 >>>= 2;  // Unsigned shift right by 2 positions
+// Binary after shift: 00111100 // while shifting , shifted position will be filled with zeros
+// Decimal: 60
+
+console.log(num3); // Output: 60
+
+
+
+
 
