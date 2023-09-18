@@ -14,26 +14,26 @@ console.log(result);
 
 //function
 function example() {
-    const name2 = "Dev";
-    if (true) {
-        var varVariable = "I'm a var!";
-        let letVariable = "I'm a let!";
-    }
-    console.log(varVariable); // Accessible, prints "I'm a var!"
-    //console.log(letVariable); // ReferenceError: letVariable is not defined
+  const name2 = "Dev";
+  if (true) {
+    var varVariable = "I'm a var!";
+    let letVariable = "I'm a let!";
+  }
+  console.log(varVariable); // Accessible, prints "I'm a var!"
+  //console.log(letVariable); // ReferenceError: letVariable is not defined
 }
 console.log(name2);
 example();
 
-function addNumber(num1,num2){
-    return num1+num2;
+function addNumber(num1, num2) {
+  return num1 + num2;
 }
 
-console.log(addNumber(100,"20"));
+console.log(addNumber(100, "20"));
 
 //concatination
-const myAge =20;
-console.log("My age is :"+ myAge)
+const myAge = 20;
+console.log("My age is :" + myAge)
 
 console.log(`My age :${myAge}`);
 
@@ -41,7 +41,7 @@ console.log('hello it\'s me');
 
 const a = 100;
 const naam = "Edin";
-const combined = a+naam;
+const combined = a + naam;
 console.log(typeof combined);
 
 // Operator
@@ -68,22 +68,22 @@ if (number > 0) {
 }
 
 //Object,Properties,Methods
-const car = {type:"Fiat", model:"500", color:"white"};
+const car = { type: "Fiat", model: "500", color: "white" };
 
 const person = {
-    firstName: "John",
-    lastName : "Doe",
-    id       : 5566,
-    fullName : function() {
-      return this.firstName + " " + this.lastName;
-    }
-  };
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+};
 
- console.log(person.fullName());
+console.log(person.fullName());
 
 //JavaScript Introduction
-function changeInnerHtmlFunction(){
-  document.getElementById("demo").innerHTML="Paragraph changed.";
+function changeInnerHtmlFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 // <!-- Shift Assignment Operators -->
 // Note ::
@@ -113,7 +113,19 @@ num3 >>>= 2;  // Unsigned shift right by 2 positions
 
 console.log(num3); // Output: 60
 
+//javaScripts functions
+// function myFunction() {
+//   alert("Hello World!");
+// }
+// myFunction();
 
-
-
-
+//java scripts objects
+const airPlane = {
+  type: "Fait",
+  model: "b-123",
+  color: "white",
+  isPrepareForTakeOf: function () {
+     return false;
+  }
+}
+console.log(airPlane.isPrepareForTakeOf());
