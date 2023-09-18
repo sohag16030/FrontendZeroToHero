@@ -134,13 +134,46 @@
 // HTML EventListener//
 //click event // input event // page loading
 
-const insertedValueRef = document.getElementById("name");
-const displayValueRef = document.getElementById("message");
+// const insertedValueRef = document.getElementById("name");
+// const displayValueRef = document.getElementById("message");
 
-insertedValueRef.addEventListener("change", function() {
-   const insertedValue = insertedValueRef.value;
-   displayValueRef.textContent = insertedValue;
-});
+// insertedValueRef.addEventListener("change", function() {
+//    const insertedValue = insertedValueRef.value;
+//    displayValueRef.textContent = insertedValue;
+// });
 
+
+// JavaScript Strings as Objects
+// let x = "John";
+// let y = new String("John");
+
+// object concept is similar as java
+
+//for literal or string pool
+// for == : check just values
+// for ===: check type and value
+
+//String methods//
+
+//slice and subStr are similar(end position value is excluded in the result)
+//for negative value operation start from reverse order.
+// for substring for negative value in anypostion(start,end) will be treated as 0
+
+// let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// // let length = text.length;
+// // console.log(length)
+
+// let part = text.substring(-1,5);
+// console.log(part);
+
+//html change using click event
+// const replacePositonRef = document.getElementById("replaceOperation");
+
+// function relaceMethodCall(){
+//   const htmlOfReplacePostion = replacePositonRef.innerHTML;
+//   console.log("html:"+ htmlOfReplacePostion);
+//   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
+//   replacePositonRef.innerHTML = updatedHTML;
+// }
 
 
