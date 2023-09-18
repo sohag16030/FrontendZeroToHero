@@ -167,13 +167,13 @@
 // console.log(part);
 
 //html change using click event
-// const replacePositonRef = document.getElementById("replaceOperation");
+const replacePositonRef = document.getElementById("replaceOperation");
 
-// function relaceMethodCall(){
-//   const htmlOfReplacePostion = replacePositonRef.innerHTML;
-//   console.log("html:"+ htmlOfReplacePostion);
-//   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
-//   replacePositonRef.innerHTML = updatedHTML;
-// }
+function relaceMethodCall(){
+  const htmlOfReplacePostion = replacePositonRef.innerHTML;
+  console.log("html:"+ htmlOfReplacePostion);
+  updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
+  replacePositonRef.innerHTML = updatedHTML;
+}
 
 
