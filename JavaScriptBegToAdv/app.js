@@ -80,3 +80,9 @@ const person = {
   };
 
  console.log(person.fullName());
+
+//JavaScript Introduction
+function changeInnerHtmlFunction(){
+  document.getElementById("demo").innerHTML="Paragraph changed.";
+}
+
