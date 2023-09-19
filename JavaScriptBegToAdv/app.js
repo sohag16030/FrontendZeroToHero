@@ -175,3 +175,92 @@
 //   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
 //   replacePositonRef.innerHTML = updatedHTML;
 // }
+
+// String Search Methods
+
+//String Templates
+//back-tics
+
+// let firstName = "John";
+// let lastName = "Deo";
+// let name = `welcome ${firstName} ${lastName}`;
+// console.log(name);
+
+// let header = "Templates Literals";
+// let tags = ["template literals", "javaScript", "es6"];
+
+// let html = `<h2>${header}</h2><ul>`;
+// for (const x of tags) {
+//     html += `<li>${x}</li>`;
+// }
+// html += `</ul>`;
+
+// function showHtml(){
+//     document.getElementById("demo").innerHTML = html;
+// }
+
+const fruits = ["orange","apple","banana"];
+
+// console.log(fruits);
+// fruits.push("orange");
+// document.getElementById("demo").innerHTML = fruits;
+// //fruits.pop();
+// fruits.shift();
+// document.getElementById("demo").innerHTML = fruits;
+
+// fruits.sort();
+// console.log(fruits);
+
+// const numbers = [1, 45, 3, 2, 4, 6, 70, 8, 7, 6];
+// numbers.sort(function (a, b) { return (a - b) });
+// console.log(numbers);
+
+// const cars = [
+//     {type:"Volvo", year:2016},
+//     {type:"Saab", year:2001},
+//     {type:"BMW", year:2010}
+//   ];
+  
+//interger value sorting is easier
+// cars.sort(function(a,b){
+//     return(a.year-b.year);
+// })
+
+//sorting object based on object property. property is string type
+// cars.sort(function(a,b){
+//     let x = a.type.toLowerCase();
+//     let y = b.type.toLowerCase();
+//     if (x < y) {return -1;}
+//     if (x > y) {return 1;}
+//     return 0;
+// })
+
+// console.log(cars);
+
+//Array rotation
+
+// const numbers = [1,2,3,4,5];
+// numbers.forEach(test);
+// function test(value,index,numbers){
+//      console.log(value);
+// }
+
+// const num2 = numbers.map(mapping);
+//  function mapping(value){
+//     return value*2;
+// }
+// console.log(num2);
+
+// console.log(2+"2");
+
+// let name = null;
+// let text = "missing";
+// let result = name ?? text;
+// console.log(result);
+
+// function relaceMethodCall(){
+//   const htmlOfReplacePostion = replacePositonRef.innerHTML;
+//   console.log("html:"+ htmlOfReplacePostion);
+//   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
+//   replacePositonRef.innerHTML = updatedHTML;
+// }
