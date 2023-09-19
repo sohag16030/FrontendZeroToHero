@@ -167,13 +167,45 @@
 // console.log(part);
 
 //html change using click event
-const replacePositonRef = document.getElementById("replaceOperation");
+// const replacePositonRef = document.getElementById("replaceOperation");
 
-function relaceMethodCall(){
-  const htmlOfReplacePostion = replacePositonRef.innerHTML;
-  console.log("html:"+ htmlOfReplacePostion);
-  updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
-  replacePositonRef.innerHTML = updatedHTML;
-}
+// function relaceMethodCall(){
+//   const htmlOfReplacePostion = replacePositonRef.innerHTML;
+//   console.log("html:"+ htmlOfReplacePostion);
+//   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
+//   replacePositonRef.innerHTML = updatedHTML;
+// }
 
+// String Search Methods
 
+//String Templates
+//back-tics
+
+// let firstName = "John";
+// let lastName = "Deo";
+// let name = `welcome ${firstName} ${lastName}`;
+// console.log(name);
+
+// let header = "Templates Literals";
+// let tags = ["template literals", "javaScript", "es6"];
+
+// let html = `<h2>${header}</h2><ul>`;
+// for (const x of tags) {
+//     html += `<li>${x}</li>`;
+// }
+// html += `</ul>`;
+
+// function showHtml(){
+//     document.getElementById("demo").innerHTML = html;
+// }
+
+// const fruits = [
+//     "apple",
+//     "banana"
+// ]
+// console.log(fruits);
+// fruits.push("orange");
+// document.getElementById("demo").innerHTML = fruits;
+// //fruits.pop();
+// fruits.shift();
+// document.getElementById("demo").innerHTML = fruits;
