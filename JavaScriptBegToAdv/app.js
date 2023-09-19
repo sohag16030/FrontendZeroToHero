@@ -239,14 +239,14 @@ const fruits = ["orange","apple","banana"];
 
 //Array rotation
 
-const numbers = [1,2,3,4,5];
-numbers.forEach(test);
-function test(value,index,numbers){
-     console.log(value);
-}
+// const numbers = [1,2,3,4,5];
+// numbers.forEach(test);
+// function test(value,index,numbers){
+//      console.log(value);
+// }
 
-const num2 = numbers.map(mapping);
- function mapping(value){
-    return value*2;
-}
-console.log(num2);
+// const num2 = numbers.map(mapping);
+//  function mapping(value){
+//     return value*2;
+// }
+// console.log(num2);
