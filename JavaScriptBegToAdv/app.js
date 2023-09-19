@@ -267,7 +267,10 @@
 
 //for loop
 
-// const cars = ["ferari", "volvo", "allion", "primeo"]
+const cars = ["ferari", "volvo", "allion", "primeo"]
+// for (let x of cars) {
+//   console.log(x);
+// }
 
 // let text = "";
 
@@ -279,10 +282,32 @@
 //   console.log(cars[x]);
 // }
 
+
 // const person = { firstName: "John", lastName: "Doe", age: 25 };
 // let txt = "";
 // for (let x in person) {
 //   console.log(person[x]);
 //   txt += person[x];
 // }
+
+//while loop
+// let i = 10;
+// while (i > 0) {
+//   console.log(i);
+//   i--;
+// }
+
+// const letters = new Set(["a", "b", "c"]);
+// letters.add("z");
+// letters.delete("z");
+// for (let x of letters) {
+//   console.log(x);
+// }
+
+// const myMap = new Map([
+//   ["apple", 500],
+//   ["Orange", 400],
+//   ["Mango", 500]
+// ])
+// console.log(myMap.has("mango"));
 
