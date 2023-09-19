@@ -264,3 +264,4 @@ const fruits = ["orange","apple","banana"];
 //   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
 //   replacePositonRef.innerHTML = updatedHTML;
 // }
+
