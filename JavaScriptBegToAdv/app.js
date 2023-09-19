@@ -215,11 +215,11 @@ const fruits = ["orange","apple","banana"];
 // numbers.sort(function (a, b) { return (a - b) });
 // console.log(numbers);
 
-const cars = [
-    {type:"Volvo", year:2016},
-    {type:"Saab", year:2001},
-    {type:"BMW", year:2010}
-  ];
+// const cars = [
+//     {type:"Volvo", year:2016},
+//     {type:"Saab", year:2001},
+//     {type:"BMW", year:2010}
+//   ];
   
 //interger value sorting is easier
 // cars.sort(function(a,b){
@@ -237,3 +237,16 @@ const cars = [
 
 // console.log(cars);
 
+//Array rotation
+
+const numbers = [1,2,3,4,5];
+numbers.forEach(test);
+function test(value,index,numbers){
+     console.log(value);
+}
+
+const num2 = numbers.map(mapping);
+ function mapping(value){
+    return value*2;
+}
+console.log(num2);
