@@ -267,7 +267,7 @@
 
 //for loop
 
-const cars = ["ferari", "volvo", "allion", "primeo"]
+//const cars = ["ferari", "volvo", "allion", "primeo"]
 // for (let x of cars) {
 //   console.log(x);
 // }
