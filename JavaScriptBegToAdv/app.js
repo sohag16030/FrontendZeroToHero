@@ -199,13 +199,18 @@
 //     document.getElementById("demo").innerHTML = html;
 // }
 
-// const fruits = [
-//     "apple",
-//     "banana"
-// ]
+const fruits = ["orange","apple","banana"];
+
 // console.log(fruits);
 // fruits.push("orange");
 // document.getElementById("demo").innerHTML = fruits;
 // //fruits.pop();
 // fruits.shift();
 // document.getElementById("demo").innerHTML = fruits;
+
+fruits.sort();
+console.log(fruits);
+
+const numbers = [1, 45, 3, 2, 4, 6, 70, 8, 7, 6];
+numbers.sort(function (a, b) { return (a - b) });
+console.log(numbers);
