@@ -250,3 +250,11 @@ const fruits = ["orange","apple","banana"];
 //     return value*2;
 // }
 // console.log(num2);
+
+// console.log(2+"2");
+
+// let name = null;
+// let text = "missing";
+// let result = name ?? text;
+// console.log(result);
+
