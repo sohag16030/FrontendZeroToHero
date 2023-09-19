@@ -199,7 +199,7 @@
 //     document.getElementById("demo").innerHTML = html;
 // }
 
-const fruits = ["orange","apple","banana"];
+//const fruits = ["orange", "apple", "banana"];
 
 // console.log(fruits);
 // fruits.push("orange");
@@ -220,7 +220,7 @@ const fruits = ["orange","apple","banana"];
 //     {type:"Saab", year:2001},
 //     {type:"BMW", year:2010}
 //   ];
-  
+
 //interger value sorting is easier
 // cars.sort(function(a,b){
 //     return(a.year-b.year);
@@ -263,5 +263,26 @@ const fruits = ["orange","apple","banana"];
 //   console.log("html:"+ htmlOfReplacePostion);
 //   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
 //   replacePositonRef.innerHTML = updatedHTML;
+// }
+
+//for loop
+
+// const cars = ["ferari", "volvo", "allion", "primeo"]
+
+// let text = "";
+
+// for (let i = 0; i < 10; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// for (let x in cars) {
+//   console.log(cars[x]);
+// }
+
+// const person = { firstName: "John", lastName: "Doe", age: 25 };
+// let txt = "";
+// for (let x in person) {
+//   console.log(person[x]);
+//   txt += person[x];
 // }
 
