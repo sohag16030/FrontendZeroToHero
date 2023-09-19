@@ -208,9 +208,32 @@ const fruits = ["orange","apple","banana"];
 // fruits.shift();
 // document.getElementById("demo").innerHTML = fruits;
 
-fruits.sort();
-console.log(fruits);
+// fruits.sort();
+// console.log(fruits);
 
-const numbers = [1, 45, 3, 2, 4, 6, 70, 8, 7, 6];
-numbers.sort(function (a, b) { return (a - b) });
-console.log(numbers);
+// const numbers = [1, 45, 3, 2, 4, 6, 70, 8, 7, 6];
+// numbers.sort(function (a, b) { return (a - b) });
+// console.log(numbers);
+
+const cars = [
+    {type:"Volvo", year:2016},
+    {type:"Saab", year:2001},
+    {type:"BMW", year:2010}
+  ];
+  
+//interger value sorting is easier
+// cars.sort(function(a,b){
+//     return(a.year-b.year);
+// })
+
+//sorting object based on object property. property is string type
+// cars.sort(function(a,b){
+//     let x = a.type.toLowerCase();
+//     let y = b.type.toLowerCase();
+//     if (x < y) {return -1;}
+//     if (x > y) {return 1;}
+//     return 0;
+// })
+
+// console.log(cars);
+
