@@ -199,7 +199,7 @@
 //     document.getElementById("demo").innerHTML = html;
 // }
 
-const fruits = ["orange","apple","banana"];
+//const fruits = ["orange", "apple", "banana"];
 
 // console.log(fruits);
 // fruits.push("orange");
@@ -215,12 +215,12 @@ const fruits = ["orange","apple","banana"];
 // numbers.sort(function (a, b) { return (a - b) });
 // console.log(numbers);
 
-const cars = [
-    {type:"Volvo", year:2016},
-    {type:"Saab", year:2001},
-    {type:"BMW", year:2010}
-  ];
-  
+// const cars = [
+//     {type:"Volvo", year:2016},
+//     {type:"Saab", year:2001},
+//     {type:"BMW", year:2010}
+//   ];
+
 //interger value sorting is easier
 // cars.sort(function(a,b){
 //     return(a.year-b.year);
@@ -258,9 +258,124 @@ const cars = [
 // let result = name ?? text;
 // console.log(result);
 
-let text = "";
 
-for (let i = 0, len = cars.length; i < len; i++) {
-    text += cars[i].type + "<br>";
-  }
-  console.log(text)
+// let text = "";
+
+// for (let i = 0, len = cars.length; i < len; i++) {
+//     text += cars[i].type + "<br>";
+//   }
+//   console.log(text)
+
+// function relaceMethodCall(){
+//   const htmlOfReplacePostion = replacePositonRef.innerHTML;
+//   console.log("html:"+ htmlOfReplacePostion);
+//   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
+//   replacePositonRef.innerHTML = updatedHTML;
+// }
+
+//for loop
+
+//const cars = ["ferari", "volvo", "allion", "primeo"]
+// for (let x of cars) {
+//   console.log(x);
+// }
+
+// let text = "";
+
+// for (let i = 0; i < 10; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// for (let x in cars) {
+//   console.log(cars[x]);
+// }
+
+
+// const person = { firstName: "John", lastName: "Doe", age: 25 };
+// let txt = "";
+// for (let x in person) {
+//   console.log(person[x]);
+//   txt += person[x];
+// }
+
+//while loop
+// let i = 10;
+// while (i > 0) {
+//   console.log(i);
+//   i--;
+// }
+
+// const letters = new Set(["a", "b", "c"]);
+// letters.add("z");
+// letters.delete("z");
+// for (let x of letters) {
+//   console.log(x);
+// }
+
+// const myMap = new Map([
+//   ["apple", 500],
+//   ["Orange", 400],
+//   ["Mango", 500]
+// ])
+// console.log(myMap.has("mango"));
+
+//2009(ES5)//2015(ES6)
+
+//2016//2019//2020//2022
+
+// function relaceMethodCall(){
+//   const htmlOfReplacePostion = replacePositonRef.innerHTML;
+//   console.log("html:"+ htmlOfReplacePostion);
+//   updatedHTML = htmlOfReplacePostion.replace("Microsoft","W3School.com");
+//   replacePositonRef.innerHTML = updatedHTML;
+// }
+
+//for loop
+
+//const cars = ["ferari", "volvo", "allion", "primeo"]
+// for (let x of cars) {
+//   console.log(x);
+// }
+
+// let text = "";
+
+// for (let i = 0; i < 10; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// for (let x in cars) {
+//   console.log(cars[x]);
+// }
+
+
+// const person = { firstName: "John", lastName: "Doe", age: 25 };
+// let txt = "";
+// for (let x in person) {
+//   console.log(person[x]);
+//   txt += person[x];
+// }
+
+//while loop
+// let i = 10;
+// while (i > 0) {
+//   console.log(i);
+//   i--;
+// }
+
+// const letters = new Set(["a", "b", "c"]);
+// letters.add("z");
+// letters.delete("z");
+// for (let x of letters) {
+//   console.log(x);
+// }
+
+// const myMap = new Map([
+//   ["apple", 500],
+//   ["Orange", 400],
+//   ["Mango", 500]
+// ])
+// console.log(myMap.has("mango"));
+
+//2009(ES5)//2015(ES6)
+
+//2016//2019//2020//2022
