@@ -484,7 +484,7 @@
 //   console.log(x);
 
 
-//JS object,fucntions,class and Async
+//JS object,fucntions,class
 //object creation
 // const person = new Object();
 // person.firstName = "John";
@@ -542,8 +542,57 @@
 
 //JS calss
 
+// class car{
+//     constructor(name,year){
+//         this.name = name;
+//         this.year = year;
+//     }
+//     age(){
+//         const date = new Date();
+//         return date.getFullYear() - this.year;
+//     }
+// }
 
-//Web API's,AJAX
+// const myCar = new car("Ferari",1999);
+// console.log (`my ${myCar.name} is ${myCar.age()} years old`)
+
+// class car {
+
+//     constructor(brand) {
+//         this._brand = brand;
+//     }
+//     present() {
+//         return this._brand;
+//     }
+// }
+
+// class model extends car {
+//     constructor(brand,version) {
+//         super(brand);
+//         this.version = version;
+//     }
+//     display() {
+//         console.log(`brand is ${this.present()} and model ${this.version}`)
+//     }
+// }
+
+// const m = new model("ferari","atlas");
+// m.display();
+
+// class Car {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     static hello() {
+//         console.log("static method called");
+//     }
+// }
+
+// const myCar = new Car("Ford");
+// console.log(Car.hello());
+
+
+// Async, Web API's,AJAX
 
 //JQuery
 
