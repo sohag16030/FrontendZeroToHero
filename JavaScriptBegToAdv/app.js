@@ -215,11 +215,11 @@ const fruits = ["orange","apple","banana"];
 // numbers.sort(function (a, b) { return (a - b) });
 // console.log(numbers);
 
-// const cars = [
-//     {type:"Volvo", year:2016},
-//     {type:"Saab", year:2001},
-//     {type:"BMW", year:2010}
-//   ];
+const cars = [
+    {type:"Volvo", year:2016},
+    {type:"Saab", year:2001},
+    {type:"BMW", year:2010}
+  ];
   
 //interger value sorting is easier
 // cars.sort(function(a,b){
@@ -258,3 +258,9 @@ const fruits = ["orange","apple","banana"];
 // let result = name ?? text;
 // console.log(result);
 
+let text = "";
+
+for (let i = 0, len = cars.length; i < len; i++) {
+    text += cars[i].type + "<br>";
+  }
+  console.log(text)
