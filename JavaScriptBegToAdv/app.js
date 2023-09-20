@@ -461,18 +461,34 @@
 // Java Script Promises
 // promise is called for asyncronas calling.............
 
-const myPromise = new Promise(function (myResolve, myReject) {
-    setTimeout(function () { myResolve("myResolve calling..."); }, 3000);
-    setTimeout(function () { myReject("myReject calling..."); }, 4000);
-});
+// const myPromise = new Promise(function (myResolve, myReject) {
+//     setTimeout(function () { myResolve("myResolve calling..."); }, 3000);
+//     setTimeout(function () { myReject("myReject calling..."); }, 4000);
+// });
 
-myPromise.then(function (message) {
-    console.log(message);
-});
+// myPromise.then(function (message) {
+//     console.log(message);
+// });
 
-myPromise.catch(function (error) {
-    console.log(error);
-});
+// myPromise.catch(function (error) {
+//     console.log(error);
+// });
 
-//2019//2020//2022
+// function sum(...args) {
+//     let sum = 0;
+//     for (let arg of args) sum += arg;
+//     return sum;
+//   }
+  
+//   let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
+//   console.log(x);
+
+
+//JS object,fucntions,class and Async
+
+//JS Dom,BOM
+
+//Web API's,AJAX
+
+//JQuery
 
