@@ -591,8 +591,18 @@
 // const myCar = new Car("Ford");
 // console.log(Car.hello());
 
-
 // Async, Web API's,AJAX
+//callback
+
+function myDisplayer(some) {
+    console.log(some);
+}
+function myCalculator(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+}
+
+myCalculator(5,4,myDisplayer);
 
 //JQuery
 
