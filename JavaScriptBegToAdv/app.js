@@ -434,6 +434,31 @@
 
 //2016(ES6)
 
+// var x = function (x, y) {
+//     return x * y;
+// }
+
+// arrow function
+// const x = (x, y) => { return x * y };
+
+// console.log(x(2,3));
+
+//spread operator
+// const q1 = ["Jan", "Feb", "Mar"];
+// const q2 = ["Apr", "May"];
+// const q3 = ["Jul", "Aug", "Sep"];
+// const q4 = ["Oct", "Nov", "May"];
+
+// const year = [...q1, ...q2, ...q3, ...q4];
+// console.log(year);
+
+// max value of a array
+
+// const numbers = [23,55,21,87,56];
+// let maxValue = Math.max(...numbers);
+// console.log(maxValue);
+
+//Java Script Promises
 
 
 //2019//2020//2022
