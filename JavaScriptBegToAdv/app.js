@@ -458,8 +458,21 @@
 // let maxValue = Math.max(...numbers);
 // console.log(maxValue);
 
-//Java Script Promises
+// Java Script Promises
+// promise is called for asyncronas calling.............
 
+const myPromise = new Promise(function (myResolve, myReject) {
+    setTimeout(function () { myResolve("myResolve calling..."); }, 3000);
+    setTimeout(function () { myReject("myReject calling..."); }, 4000);
+});
+
+myPromise.then(function (message) {
+    console.log(message);
+});
+
+myPromise.catch(function (error) {
+    console.log(error);
+});
 
 //2019//2020//2022
 
