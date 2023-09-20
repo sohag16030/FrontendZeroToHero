@@ -377,5 +377,64 @@
 // console.log(myMap.has("mango"));
 
 //2009(ES5)//2015(ES6)
+// var str = "HELLO WORLD";
+// str.charAt(0);   
 
-//2016//2019//2020//2022
+// var obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+// console.log(obj);
+
+//Property Getters and Setters
+
+// var person = {
+//     _firstName: "Rahul",
+//     _lastName: "Jabir",
+//     set firstName(firstName) {
+//         this._firstName = firstName;
+//     },
+//     set lastName(lastName) {
+//         this._lastName = lastName;
+//     },
+//     get fullName() {
+//         return this._firstName + this._lastName;
+//     }
+// }
+// person.firstName = "Default";
+// person.lastName = "Name";
+// console.log(person.fullName);
+
+// var person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     language: "NO"
+// };
+
+// Object.defineProperty(person, "language", {
+//     value: "en"
+// });
+
+// Object.defineProperty(person, "language", {
+//     get: function () { return language },
+//     set: function (value) { language = value.toUpperCase() }
+// });
+// // Change Language
+// person.language = "en";
+
+// for (var x in person) {
+//     console.log(person[x]);
+// }
+//console.log(person);
+
+// var parent = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     language: "NO"
+// };
+// Object.create(parent,donor);
+// console.log(donor);
+
+//2016(ES6)
+
+
+
+//2019//2020//2022
+
