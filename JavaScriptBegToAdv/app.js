@@ -479,14 +479,69 @@
 //     for (let arg of args) sum += arg;
 //     return sum;
 //   }
-  
+
 //   let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
 //   console.log(x);
 
 
 //JS object,fucntions,class and Async
+//object creation
+// const person = new Object();
+// person.firstName = "John";
+// person.lastName = "Doe";
+// person.age = 50;
+// person.eyeColor = "blue";
 
 //JS Dom,BOM
+// myObj = {
+//     name: "John",
+//     age: 30,
+//     cars: {
+//         car1: "Ford",
+//         car2: "BMW",
+//         car3: "Fiat"
+//     }
+// }
+// console.log(myObj.cars.car1)
+
+// const person = {
+//     name: "John",
+//     age: 30,
+//     cars: [
+//         { brand: "Ford", model: ["A4", "focus", "Mastang"] },
+//         { brand: "BMW", model: ["320", "X3", "X5"] },
+//         { brand: "Fiat", model: ["500", "Panda"] }
+//     ]
+// }
+
+// for(let x in person){
+//     //let cars = person[cars];
+//     console.log(x);
+// }
+
+// for (let index in person.cars) {
+//     console.log(person.cars[index].brand);
+//     for (let idx in person.cars[index].model) {
+//      console.log(person.cars[index].model[idx]);
+//     }
+// }
+
+// function Person(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+// }
+// const myFather = new Person("John", "Doe", 50, "blue");
+
+// myFather.fullName = function () {
+//     return this.firstName + this.lastName;
+// }
+// console.log(myFather.fullName());
+
+
+//JS calss
+
 
 //Web API's,AJAX
 
