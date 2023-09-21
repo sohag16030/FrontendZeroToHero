@@ -594,15 +594,17 @@
 // Async, Web API's,AJAX
 //callback
 
-function myDisplayer(some) {
-    console.log(some);
-}
-function myCalculator(num1, num2, myCallback) {
-    let sum = num1 + num2;
-    myCallback(sum);
-}
-
-myCalculator(5,4,myDisplayer);
+// function myDisplayer(some) {
+//     console.log("called 2");
+//     console.log(some);
+// }
+// function myCalculator(num1, num2, callback) {
+//     let sum = num1 + num2;
+//     console.log("called 1");
+//     callback(sum);
+// }
+// //When you pass a function as an argument, remember not to use parenthesis.
+// myCalculator(5,4,myDisplayer);
 
 //JQuery
 
