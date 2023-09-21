@@ -614,7 +614,8 @@
 // }
 
 // const myPromise = new Promise(function (myResolve, myReject) {
-//     setTimeout(function () { myResolve("myResolve is calling"); }, 3000);
+//     // function () { myResolve("myResolve is calling");
+//     //setTimeout(function () { myResolve("myResolve is calling"); }, 3000);
 //     //setTimeout(function () { myReject("myReject is calling") }, 3000);
 // });
 
@@ -635,6 +636,35 @@
 // }
 
 //Promise................... I promise a Result.................
+
+//normal value return 
+
+// function display(message) {
+//     console.log(message);
+// }
+
+// const myPromise = new Promise(function (resolve, reject) {
+//     let x = 1;
+//     if (x == 0) {
+//         resolve("ok");
+//     } else {
+//         reject("Not Ok")
+//     }
+// });
+
+// myPromise.then(
+//     function (value) {
+//         display(value);
+//     }
+// )
+// myPromise.catch(
+//     function (error) {
+//         display(error);
+//     }
+// )
+
+//how to display a image using promise.....
+
 
 
 //JQuery
