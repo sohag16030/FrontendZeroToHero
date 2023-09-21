@@ -704,5 +704,19 @@
 
 // JS DOM
 
+// document.getElementById("demo").onclick = function () {
+//     document.getElementById("demo").innerHTML = "hello";
+// }
 
+// const insertDataRef = document.getElementById("demo");
+// const showDataRef = document.getElementById("showData");
+
+// document.addEventListener("change", function () {
+//     let val = insertDataRef.value;
+//     console.log(val);
+//     showDataRef.innerHTML = val;
+// })
+
+// const element = document.getElementById("demo").querySelector("img");
+// element.src="../Restaurant Website/images/bg/bg-01.jpg"
 
