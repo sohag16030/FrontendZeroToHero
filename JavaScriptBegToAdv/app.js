@@ -663,9 +663,46 @@
 //     }
 // )
 
-//how to display a image using promise.....
+//how to display a image using callback.....
+// function myDisplayer(some) {
+//     document.getElementById("demo").innerHTML = some;
+// }
+
+// function getFile(callBack) {
+//     let req = new XMLHttpRequest();
+//     req.open('GET', "mycar.html");
+//     req.onload = function () {
+//         if (req.status == 200) callBack(this.responseText);
+//         else callBack("Error");
+//     }
+//     req.send();
+// }
+
+// getFile(myDisplayer);
+
+//async//await
+
+// function myDisplayer(value) {
+//     console.log(value);
+// }
+// async function myFunction() {
+//     return "Hello";
+// }
+// myFunction().then(
+//     function (value) { myDisplayer(value) },
+//     function (error) { myDisplayer(value) }
+// );
+
+// async function myDisplay() {
+//     let myPromise = new Promise(function (resolve, reject) {
+//         resolve("I love You !!");
+//     });
+//     document.getElementById("demo").innerHTML = await myPromise;
+// }
+
+// myDisplay();
+
+// JS DOM
 
 
-
-//JQuery
 
