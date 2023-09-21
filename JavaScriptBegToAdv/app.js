@@ -606,5 +606,36 @@
 // //When you pass a function as an argument, remember not to use parenthesis.
 // myCalculator(5,4,myDisplayer);
 
+// console.log("wait 3 sec for reflection")
+// setTimeout(myFunction,3000);
+
+// function myFunction(){
+//     console.log("Hello");
+// }
+
+// const myPromise = new Promise(function (myResolve, myReject) {
+//     setTimeout(function () { myResolve("myResolve is calling"); }, 3000);
+//     //setTimeout(function () { myReject("myReject is calling") }, 3000);
+// });
+
+// myPromise.then(function (message) {
+//     console.log(message);
+// });
+
+// myPromise.catch(function (error) {
+//     console.log(error);
+// });
+
+// setInterval(myFunction, 1000);
+// function myFunction() {
+//     let d = new Date();
+//     let time = (d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+//     document.getElementById("demo").innerText = time;
+//     console.log(d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds());
+// }
+
+//Promise................... I promise a Result.................
+
+
 //JQuery
 
