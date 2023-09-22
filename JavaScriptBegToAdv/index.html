@@ -189,12 +189,43 @@
         const element = document.getElementById("div1");
         element.appendChild(para);
     </script> -->
-    
-    <!-- insert element at first -->
-    <script>
-        
-    </script>
 
+    <!-- insert element at first -->
+    <!-- <div id="demo">
+        <p id="p1">1st paragraph</p>
+        <p>2nd paragraph</p>
+    </div>
+    <script>
+        const element = document.createElement("p");
+        const textNode = document.createTextNode("3rd paragraph");
+        element.appendChild(textNode);
+
+        const parenetElement = document.getElementById("demo");
+        const insertBeforeOfThisNode = document.getElementById("p1");
+        parenetElement.replaceChild(element, replacingNode);
+        parenetElement.insertBefore(element,insertBeforeOfThisNode);
+    </script> -->
+    <!-- <div>
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+        const elmnt = document.getElementById("p1");
+        elmnt.remove();
+    </script> -->
+
+    <!-- child Element Delete  -->
+    <!-- <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+        const parent = document.getElementById("div1");
+        const child = document.getElementById("p1");
+        parent.removeChild(child);
+    </script> -->
+    
+    <!-- //Java Script DOM collection -->
 </body>
 
 </html>
