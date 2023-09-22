@@ -108,30 +108,59 @@
         }
     </script> -->
 
-    <div id="showMsg" style="height: 200px; width: 200px; background-color: green; text-align: center;">
-
+    <!-- <div id="showMsg" style="height: 200px; width: 200px; background-color: green; text-align: center;">
+        
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const parent = document.getElementById("showMsg");
-            // parent.addEventListener("mouseover", showGreeting);
-            // parent.addEventListener("mouseout", showGoodBye);
-            // parent.addEventListener("click", showHappyCoding);
-            // //   parent.addEventListener("resize",changeColour);
+            parent.addEventListener("mouseover", showGreeting);
+            parent.addEventListener("mouseout", showGoodBye);
+            parent.addEventListener("click", showHappyCoding);
 
-            // function showGreeting() {
-            //     console.log("checked mouseover");
-            // }
-            // function showGoodBye() {
-            //     console.log("checked mouseout");
-            // }
-            // function showHappyCoding() {
-            //     console.log("checked click");
-            // }
+            window.addEventListener("resize", changeColour);
+
+            function showGreeting() {
+               parent.innerHTML = "Greetings";
+            }
+            function showGoodBye() {
+                parent.innerHTML = "GoodBye";
+            }
+            function showHappyCoding() {
+                parent.innerHTML = "Happy Coding";
+            }
+            function changeColour() {
+                const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+                parent.style.backgroundColor = randomColor;
+                console.log("resized called");
+            }
         });
-    </script>
+    </script> -->
 
-    <script src="./app.js"></script>
+    <!-- <script src="./app.js"></script> -->
+    <div id="showMsg" onclick="showGreeting()" onmouseover="showHappyCoding()" onmouseout="showSeeYouSoon()"
+        onmousewheel="changeColour()" style="height: 200px; width: 200px; background-color: rgb(128, 0, 13); text-align: center;">
+    </div>
+    <script>
+        function showGreeting() {
+            console.log("1");
+            parent.innerHTML = "Greetings";
+        }
+        function showSeeYouSoon() {
+            console.log("2");
+            parent.innerHTML = "See you soon";
+        }
+        function showHappyCoding() {
+            console.log("3");
+            parent.innerHTML = "Happy Coding";
+        }
+        function changeColour() {
+            console.log("4");
+            const parent = document.getElementById("showMsg");
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            parent.style.backgroundColor = randomColor;
+        }
+    </script>
 </body>
 
 </html>
