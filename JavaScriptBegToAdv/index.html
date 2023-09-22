@@ -138,10 +138,13 @@
     </script> -->
 
     <!-- <script src="./app.js"></script> -->
-    <div id="showMsg" onclick="showGreeting()" onmouseover="showHappyCoding()" onmouseout="showSeeYouSoon()"
-        onmousewheel="changeColour()" style="height: 200px; width: 200px; background-color: rgb(128, 0, 13); text-align: center;">
+    <!-- <div id="showMsg" onclick="showGreeting()"
+        onmousewheel="changeColour()"
+        style="height: 200px; width: 200px; background-color: rgb(128, 0, 13); text-align: center;">
     </div>
     <script>
+        const parent = document.getElementById("showMsg");
+
         function showGreeting() {
             console.log("1");
             parent.innerHTML = "Greetings";
@@ -155,12 +158,12 @@
             parent.innerHTML = "Happy Coding";
         }
         function changeColour() {
-            console.log("4");
-            const parent = document.getElementById("showMsg");
             const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
             parent.style.backgroundColor = randomColor;
+            console.log("resized called");
         }
-    </script>
+    </script> -->
+    
 </body>
 
 </html>
