@@ -82,7 +82,55 @@
         <input type="text" name="fname" required>
         <input type="submit" value="Submit">
     </form> -->
-    
+
+    <!-- //Event Listerner -->
+    <!-- <button id="btn" type="submit">Show Date</button>
+    <p id="date"></p>
+    <script>
+        document.getElementById("btn").addEventListener("click", displayDate);
+
+        function displayDate() {
+            document.getElementById("date").innerHTML = Date();
+        };
+    </script> -->
+    <!-- <label>Insert Data</label>
+    <input type="text" id="fname">
+    <h1>First Name is inserted::</h1>
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementById("fname");
+        const showHere = document.getElementById("demo");
+        element.addEventListener("change", showFirstName);
+        function showFirstName() {
+            console.log(element.value);
+            showHere.innerHTML = element.value;
+        }
+    </script> -->
+
+    <div id="showMsg" style="height: 200px; width: 200px; background-color: green; text-align: center;">
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const parent = document.getElementById("showMsg");
+            // parent.addEventListener("mouseover", showGreeting);
+            // parent.addEventListener("mouseout", showGoodBye);
+            // parent.addEventListener("click", showHappyCoding);
+            // //   parent.addEventListener("resize",changeColour);
+
+            // function showGreeting() {
+            //     console.log("checked mouseover");
+            // }
+            // function showGoodBye() {
+            //     console.log("checked mouseout");
+            // }
+            // function showHappyCoding() {
+            //     console.log("checked click");
+            // }
+        });
+    </script>
+
     <script src="./app.js"></script>
 </body>
 
