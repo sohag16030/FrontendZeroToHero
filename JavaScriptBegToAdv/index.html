@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="checkCookie()">
     <!-- <h2>What can JavaScript do?</h2>
     <p id="demo">JavaScript can change inner HTML content</p>
     <button type="button" onclick='changeInnerHtmlFunction()'>
@@ -245,8 +245,6 @@
         document.getElementById("demo").innerHTML = "The innerHTML of the second paragraph is: " + myCollection[1].innerHTML;
 
     </script> -->
-    
-    <script src="./app.js"></script>
 
     <!-- //DOM -->
 
@@ -309,6 +307,18 @@
             element.innerHTML = "random color showing";
         }
     </script> -->
+    <!-- <p id="demo"> </p>
+    <button onclick="clearInterval(myVal)">stop clock</button>
+
+    <script>
+        var myVal = setInterval(myInterval, 1000);
+        function myInterval() {
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        }    
+    </script> -->
+
+    <script src="./app.js"></script>
 
 </body>
 
