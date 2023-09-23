@@ -82,6 +82,170 @@
         <input type="text" name="fname" required>
         <input type="submit" value="Submit">
     </form> -->
+
+    <!-- //Event Listerner -->
+    <!-- <button id="btn" type="submit">Show Date</button>
+    <p id="date"></p>
+    <script>
+        document.getElementById("btn").addEventListener("click", displayDate);
+
+        function displayDate() {
+            document.getElementById("date").innerHTML = Date();
+        };
+    </script> -->
+    <!-- <label>Insert Data</label>
+    <input type="text" id="fname">
+    <h1>First Name is inserted::</h1>
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementById("fname");
+        const showHere = document.getElementById("demo");
+        element.addEventListener("change", showFirstName);
+        function showFirstName() {
+            console.log(element.value);
+            showHere.innerHTML = element.value;
+        }
+    </script> -->
+
+    <!-- <div id="showMsg" style="height: 200px; width: 200px; background-color: green; text-align: center;">
+        
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const parent = document.getElementById("showMsg");
+            parent.addEventListener("mouseover", showGreeting);
+            parent.addEventListener("mouseout", showGoodBye);
+            parent.addEventListener("click", showHappyCoding);
+
+            window.addEventListener("resize", changeColour);
+
+            function showGreeting() {
+               parent.innerHTML = "Greetings";
+            }
+            function showGoodBye() {
+                parent.innerHTML = "GoodBye";
+            }
+            function showHappyCoding() {
+                parent.innerHTML = "Happy Coding";
+            }
+            function changeColour() {
+                const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+                parent.style.backgroundColor = randomColor;
+                console.log("resized called");
+            }
+        });
+    </script> -->
+
+    <!-- <script src="./app.js"></script> -->
+    <!-- <div id="showMsg" onclick="showGreeting()"
+        onmousewheel="changeColour()"
+        style="height: 200px; width: 200px; background-color: rgb(128, 0, 13); text-align: center;">
+    </div>
+    <script>
+        const parent = document.getElementById("showMsg");
+
+        function showGreeting() {
+            console.log("1");
+            parent.innerHTML = "Greetings";
+        }
+        function showSeeYouSoon() {
+            console.log("2");
+            parent.innerHTML = "See you soon";
+        }
+        function showHappyCoding() {
+            console.log("3");
+            parent.innerHTML = "Happy Coding";
+        }
+        function changeColour() {
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            parent.style.backgroundColor = randomColor;
+            console.log("resized called");
+        }
+    </script> -->
+    <!-- //Nodes -->
+    <!-- 
+    <h1 id="id01">My First Page</h1>
+    <p id="id02"></p>
+
+    <script>
+        document.getElementById("id02").innerHTML = 
+       // document.getElementById("id01").childNodes[0].nodeValue;
+        document.getElementById("id01").firstChild.nodeValue;
+    </script> -->
+
+    <!-- //Element add -->
+    <!-- insert element at last -->
+    <!-- <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <script>
+        const para = document.createElement("p");
+        const node = document.createTextNode("This is new Element");
+        para.appendChild(node);
+
+        const element = document.getElementById("div1");
+        element.appendChild(para);
+    </script> -->
+
+    <!-- insert element at first -->
+    <!-- <div id="demo">
+        <p id="p1">1st paragraph</p>
+        <p>2nd paragraph</p>
+    </div>
+    <script>
+        const element = document.createElement("p");
+        const textNode = document.createTextNode("3rd paragraph");
+        element.appendChild(textNode);
+
+        const parenetElement = document.getElementById("demo");
+        const insertBeforeOfThisNode = document.getElementById("p1");
+        parenetElement.replaceChild(element, replacingNode);
+        parenetElement.insertBefore(element,insertBeforeOfThisNode);
+    </script> -->
+    <!-- <div>
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+        const elmnt = document.getElementById("p1");
+        elmnt.remove();
+    </script> -->
+
+    <!-- child Element Delete  -->
+    <!-- <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <script>
+        const parent = document.getElementById("div1");
+        const child = document.getElementById("p1");
+        parent.removeChild(child);
+    </script> -->
+
+    <!-- //Java Script DOM collection -->
+
+    <!-- <h2>JavaScript HTML DOM</h2>
+
+    <p>Hello World!</p>
+
+    <p>Hello Norway!</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const myCollection = document.getElementsByTagName("p");
+
+        // querySelectorAll do the same thing
+        const myNodeList = document.querySelectorAll("p");
+
+        document.getElementById("demo").innerHTML = "The innerHTML of the frist paragraph is: " + myCollection[0].innerHTML;
+        document.getElementById("demo").innerHTML = "The innerHTML of the second paragraph is: " + myCollection[1].innerHTML;
+
+    </script> -->
+    
     <script src="./app.js"></script>
 
     <!-- //DOM -->
