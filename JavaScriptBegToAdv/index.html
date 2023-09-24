@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 
-<body onload="checkCookie()">
+<body>
     <!-- <h2>What can JavaScript do?</h2>
     <p id="demo">JavaScript can change inner HTML content</p>
     <button type="button" onclick='changeInnerHtmlFunction()'>
@@ -318,6 +318,64 @@
         }    
     </script> -->
 
+    <!-- //web api' -->
+
+    <!-- <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("demo");
+
+        function getLocation() {
+            try {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } catch {
+                x.innerHTML = err;
+            }
+        }
+
+        function showPosition(position) {
+            console.log(position);
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+        }
+    </script> -->
+    <!-- <input id="id1" type="number" min="100" max="300" required>
+    <button onclick="myFunction()">OK</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            const inpObj = document.getElementById("id1");
+            if (!inpObj.checkValidity()) {
+                document.getElementById("demo").innerHTML = inpObj.validationMessage;
+            } else {
+                document.getElementById("demo").innerHTML = "Input OK";
+            }
+        } 
+    </script> -->
+
+    <!-- <label >Insert Number</label>
+    <input id="num" type="number" min="100" max="300">
+    <button type="submit" onclick="checkNumber()">submit</button>
+    <p id="demo"></p>
+
+    <script>
+        const obj = document.getElementById("num");
+        function checkNumber() {
+            if (!obj.checkValidity()) {
+                document.getElementById("demo").innerHTML = obj.validationMessage;
+            } else {
+                document.getElementById("demo").innerHTML = "input ok";
+            }
+        }
+    </script> -->
+
+    
     <script src="./app.js"></script>
 
 </body>
