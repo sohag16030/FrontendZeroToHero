@@ -385,9 +385,22 @@
 
         document.getElementById("demo").innerHTML = localStorage.getItem("name");
     </script>
-    <script src="./app.js"></script> -->
+  -->
+    <!-- <p>Let AJAX change the text</p>
+    <button type="submit" onclick="loadDoc()">Load Doc</button>
+    <script>
+     function loadDoc(){
+        const request = new XMLHttpRequest();
+        request.onload = function(){
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+        request.open("GET","D://How_About_Your_Progress//FrontendZeroToHero//JavaScriptBegToAdv//hello.txt");
+        request.send();
+     }
+    </script> -->
 
-
+    
+    <script src="./app.js"></script>
 
 </body>
 

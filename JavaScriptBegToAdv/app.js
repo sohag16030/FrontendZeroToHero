@@ -746,6 +746,7 @@
 //document cookies
 
 // function setCookie(cname, cvalue, exdays) {
+//     console.log("I am now on setCookie part");
 //     const d = new Date();
 //     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
 //     let expires = "expires=" + d.toUTCString();
@@ -753,6 +754,7 @@
 // }
 
 // function getCookie(cname) {
+//     console.log("I am now on getCookie part");
 //     let name = cname + "=";
 //     let decodedCookie = decodeURIComponent(document.cookie);
 //     let ca = decodedCookie.split(';');
@@ -769,7 +771,9 @@
 // }
 
 // function checkCookie() {
+//     setCookie("username", "sh11367", 30);
 //     let user = getCookie("username");
+//     console.log(user);
 //     if (user != "") {
 //         alert("Welcome again " + user);
 //     } else {
@@ -779,4 +783,6 @@
 //         }
 //     }
 // }
+
+// checkCookie();
 
