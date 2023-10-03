@@ -18,4 +18,13 @@
 // i = "string;"
 // console.log(i);
 
-console.log(parseInt ("4F", 16));
+// console.log(parseInt ("4F", 16));
+
+var arr1 = "john".split('');
+var arr2 = arr1.reverse();
+console.log(arr1);
+var arr3 = "jones".split('');
+arr2.push(arr3);
+
+console.log("array 1: length=" + arr1.length + arr1 + " last=" + arr1.slice(-1));
+console.log("array 2: length=" + arr2.length + arr2 + " last=" + arr2.slice(-1));
