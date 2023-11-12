@@ -1,0 +1,45 @@
+#central-div {
+    width: 90%;
+    margin-top: 90px;
+    justify-content: center;
+    align-items: center;
+    background-color: #8b858536;
+}
+#below-central-div{
+    margin-top: 50px;
+}
+.fixed-card {
+    margin-top: 20px;
+    width: 900px;
+}
+
+.content-end {
+    margin-left: 800px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.product-image {
+    height: 80px;
+    width: 100px;
+}
+
+.fixed-card {
+    margin-top: 20px;
+    width: 900px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; /* Space out the image and details */
+}
+.product-details{
+    margin-left: 50px;
+}
+.product-count{
+    margin-left: 150px;
+}
+.product-price{
+    margin-right: 30px;
+}
+.btn-secondary{
+    margin-left: 5px;
+}
+
