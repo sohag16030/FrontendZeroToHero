@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <!-- own css -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive-style.css">
+  <!-- <link rel="stylesheet" href="css/responsive-style.css"> -->
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <div  class="card fixed-card text-white bg-success mb-5">
                   <div class="card-body">
                     <h5 class="card-title">Deposit</h5>
-                    <h1>$00</h1>
+                    <h1 id="nowDeposit">$00</h1>
                   </div>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                 <div class="card fixed-card text-white bg-info mb-5">
                   <div class="card-body">
                     <h5 class="card-title">Withdraw</h5>
-                    <h1>$00</h1>
+                    <h1 id="nowWithdraw">$00</h1>
                   </div>
                 </div>
               </div>
@@ -38,7 +38,7 @@
                 <div class="card fixed-card text-white bg-primary mb-5">
                   <div class="card-body">
                     <h5 class="card-title">Balance</h5>
-                    <h1>$00</h1>
+                    <h1 id="nowBalance">$00</h1>
                   </div>
                 </div>
               </div>
@@ -49,9 +49,9 @@
                   <div class="card-body">
                     <h5 class="card-title">Deposit</h5>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="deposit" placeholder="$ amount you want to deposit">
+                        <input type="text" class="form-control" id="depositAmount" placeholder="$ amount you want to deposit">
                       </div>
-                      <a type="submit" class="btn btn-primary" href="#" class="btn btn-link">Deposit</a>
+                      <a type="submit" class="btn btn-primary"  onclick="handleButtonClickForDepositAmount()" class="btn btn-link">Deposit</a>
                   </div>
                 </div>
               </div>
@@ -60,9 +60,9 @@
                   <div class="card-body">
                     <h5 class="card-title">Withdraw</h5>
                     <div class="mb-3">
-                        <input type="number" class="form-control" id="withdraw" placeholder="$ amount you want to withdraw">
+                        <input type="number" class="form-control" id="withdrawValue" placeholder="$ amount you want to withdraw">
                       </div>
-                      <a type="submit" class="btn btn-primary" href="#" class="btn btn-link">Withdraw</a>
+                      <a type="submit" class="btn btn-primary" onclick="handleButtonClickForWithDrawAmount()" class="btn btn-link">Withdraw</a>
                   </div>
                 </div>
               </div>
