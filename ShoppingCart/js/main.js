@@ -1,5 +1,6 @@
 
-var subTotal = 0;
+var subTotal1 = 0;
+var subTotal2 = 0;
 function handleButtonClickForIncreaseCount() {
     //Get old value
     const oldValue = parseInt(document.getElementById('showCount').innerText.replace('$', '').trim());
@@ -22,10 +23,11 @@ function handleButtonClickForIncreaseCount() {
     console.log(newPrice);
 
     //Update the subtotal
-    subTotal = subTotal + newPrice;
-    document.getElementById('subtotalValue').innerText = "$" + subTotal;
-    console.log("Update the subtotalValue::");
-    console.log(subTotal);
+    subTotal1 = 0;
+    subTotal1 = subTotal2 + newPrice;
+    document.getElementById('subtotalValue').innerText = "$" + subTotal1;
+    console.log("Update the handleButtonClickForIncreaseCount subtotalValue1::");
+    console.log(subTotal1);
 }
 
 
@@ -52,10 +54,11 @@ function handleButtonClickForDecreaseCount() {
     console.log(newPrice);
 
     //Update the subtotal
-    subTotal = subTotal - newPrice;
-    document.getElementById('subtotalValue').innerText = "$" + subTotal;
-    console.log("Update the subtotalValue::");
-    console.log(subTotal);
+    subTotal1 = 0;
+    subTotal1 = subTotal2 - newPrice;
+    document.getElementById('subtotalValue').innerText = "$" + subTotal1;
+    console.log("Update the handleButtonClickForDecreaseCount subtotalValue1::");
+    console.log(subTotal1);
 }
 
 function handleButtonClickForIncreaseCaseCount() {
@@ -80,10 +83,11 @@ function handleButtonClickForIncreaseCaseCount() {
     console.log(newPrice);
 
      //Update the subtotal
-     subTotal = subTotal + newPrice;
-     document.getElementById('subtotalValue').innerText = "$" + subTotal;
-     console.log("Update the subtotalValue::");
-     console.log(subTotal);
+     subTotal2 = 0;
+     subTotal2 = subTotal1 + newPrice;
+     document.getElementById('subtotalValue').innerText = "$" + subTotal2;
+     console.log("Update the handleButtonClickForIncreaseCaseCount subtotalValue2::");
+     console.log(subTotal2);
 }
 
 
@@ -110,8 +114,9 @@ function handleButtonClickForDecreaseCaseCount() {
     console.log(newPrice);
 
      //Update the subtotal
-     subTotal = subTotal - newPrice;
-     document.getElementById('subtotalValue').innerText = "$" + subTotal;
-     console.log("Update the subtotalValue::");
-     console.log(subTotal);
+     subTotal2 = 0;
+     subTotal2 = subTotal1 - newPrice;
+     document.getElementById('subtotalValue').innerText = "$" + subTotal2;
+     console.log("Update the handleButtonClickForDecreaseCaseCount subtotalValue2::");
+     console.log(subTotal2);
 }
