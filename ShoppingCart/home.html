@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <!-- own css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive-style.css">
+    <!-- <link rel="stylesheet" href="css/responsive-style.css"> -->
 </head>
 
 <body>
@@ -28,21 +28,23 @@
                                 </div>
                                 <div class="card-body d-flex align-items-center product-count">
                                     <div>
-                                        <a type="submit" class="btn btn-secondary" onclick="handleButtonClickFor()">-</a>
+                                        <a type="submit" class="btn btn-secondary"
+                                            onclick="handleButtonClickForDecreaseCount()">-</a>
                                     </div>
                                     <div>
-                                        <a type="submit" class="btn btn-secondary" onclick="handleButtonClickFor()">1</a>
+                                        <a id="showCount" type="submit" class="btn btn-secondary">0</a>
                                     </div>
 
                                     <div>
-                                        <a type="submit" class="btn btn-secondary" onclick="handleButtonClickFor()">+</a>
+                                        <a type="submit" class="btn btn-secondary"
+                                            onclick="handleButtonClickForIncreaseCount()">+</a>
                                     </div>
                                 </div>
                                 <div class="product-price">
-                                    <h5 class="card-title">$100</h5>
+                                    <h5 id="showPhnPrice" class="card-title">$0</h5>
                                 </div>
                                 <div class="product-cancel">
-                                    <a type="submit" class="btn btn-danger" onclick="handleButtonClickFor()">X</a>
+                                    <a type="submit" class="btn btn-danger">X</a>
                                 </div>
                             </div>
                         </div>
@@ -50,39 +52,45 @@
                     <div class="col">
                         <div class="card fixed-card text-black mb-3">
                             <div class="card-body d-flex align-items-center">
-                                <img src="img/SamsungGalaxyA23.png" alt="Product Image" class="product-image">
+                                <img src="img/Samsung A51 case.png" alt="Product Image" class="product-image"
+                                    style="width: 75px;height: 80px;margin-top: -15px;margin-left: 10px;">
                                 <div class="product-details">
-                                    <h5 class="card-title">Samsung Galaxy A23</h5>
+                                    <h5 id="case-title" class="card-title">Samsung A51 case</h5>
                                 </div>
                                 <div class="card-body d-flex align-items-center product-count">
                                     <div>
-                                        <a type="submit" class="btn btn-secondary" onclick="handleButtonClickFor()">-</a>
+                                        <a id="case-countminus" type="submit" class="btn btn-secondary"
+                                            onclick="handleButtonClickForDecreaseCaseCount()">-</a>
                                     </div>
                                     <div>
-                                        <a type="submit" class="btn btn-secondary" onclick="handleButtonClickFor()">1</a>
+                                        <a id="showCountCase" type="submit" class="btn btn-secondary">0</a>
                                     </div>
 
                                     <div>
-                                        <a type="submit" class="btn btn-secondary" onclick="handleButtonClickFor()">+</a>
+                                        <a id="case-countplus" type="submit" class="btn btn-secondary"
+                                            onclick="handleButtonClickForIncreaseCaseCount()">+</a>
                                     </div>
                                 </div>
                                 <div class="product-price">
-                                    <h5 class="card-title">$100</h5>
+                                    <h5 id="showBackPadPrice" class="card-title">$0</h5>
                                 </div>
                                 <div class="product-cancel">
-                                    <a type="submit" class="btn btn-danger" onclick="handleButtonClickFor()">X</a>
+                                    <a type="submit" class="btn btn-danger">X</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card fixed-card text-black mb-3">
-                            <div class="card-body" style="margin-left: 10px;">
-                                <h6 class="card-title">Subtotal :</h6>
-                                <h6 class="card-title">Tax :</h6>
-                                <h6 class="card-title">Total :</h6>
-                                <h1 id="nowWithdraw"></h1>
-                            </div>
+                        <div>
+                            <p id="subtotal"><b>Subtotal :</b></p><br>
+                            <p id="tax"><b>Tax :</b></p><br>
+                            <p id="total"><b>Total :</b></p>
+                        </div>
+                        <div>
+                            <p id="subtotalValue"><b>$0</b></p><br>
+                            <p id="taxValue"><b>$0</b></p><br>
+                            <p id="totalValue"><b>$0</b></p>
                         </div>
                     </div>
                     <div class="content-end">
