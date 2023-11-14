@@ -1,6 +1,6 @@
 
-var subTotal1 = 0;
-var subTotal2 = 0;
+var phnPrice = 0;
+var casePrice = 0;
 function handleButtonClickForIncreaseCount() {
     //Get old value
     const oldValue = parseInt(document.getElementById('showCount').innerText.replace('$', '').trim());
@@ -21,13 +21,8 @@ function handleButtonClickForIncreaseCount() {
     document.getElementById('showPhnPrice').innerText = "$" + newPrice;
     console.log("newPrice Amount::");
     console.log(newPrice);
-
-    //Update the subtotal
-    subTotal1 = 0;
-    subTotal1 = subTotal2 + newPrice;
-    document.getElementById('subtotalValue').innerText = "$" + subTotal1;
-    console.log("Update the handleButtonClickForIncreaseCount subtotalValue1::");
-    console.log(subTotal1);
+    phnPrice = newPrice;
+    console.log("phnPrice::" + phnPrice);
 }
 
 
@@ -53,12 +48,8 @@ function handleButtonClickForDecreaseCount() {
     console.log("newPrice Amount::");
     console.log(newPrice);
 
-    //Update the subtotal
-    subTotal1 = 0;
-    subTotal1 = subTotal2 - newPrice;
-    document.getElementById('subtotalValue').innerText = "$" + subTotal1;
-    console.log("Update the handleButtonClickForDecreaseCount subtotalValue1::");
-    console.log(subTotal1);
+    phnPrice = newPrice;
+    console.log("phnPrice::" + phnPrice);
 }
 
 function handleButtonClickForIncreaseCaseCount() {
@@ -82,12 +73,8 @@ function handleButtonClickForIncreaseCaseCount() {
     console.log("newPrice Amount::");
     console.log(newPrice);
 
-     //Update the subtotal
-     subTotal2 = 0;
-     subTotal2 = subTotal1 + newPrice;
-     document.getElementById('subtotalValue').innerText = "$" + subTotal2;
-     console.log("Update the handleButtonClickForIncreaseCaseCount subtotalValue2::");
-     console.log(subTotal2);
+    casePrice = newPrice;
+    console.log("casePrice::" + casePrice);
 }
 
 
@@ -113,10 +100,24 @@ function handleButtonClickForDecreaseCaseCount() {
     console.log("newPrice Amount::");
     console.log(newPrice);
 
-     //Update the subtotal
-     subTotal2 = 0;
-     subTotal2 = subTotal1 - newPrice;
-     document.getElementById('subtotalValue').innerText = "$" + subTotal2;
-     console.log("Update the handleButtonClickForDecreaseCaseCount subtotalValue2::");
-     console.log(subTotal2);
+    casePrice = newPrice;
+    console.log("casePrice::" + casePrice);
+}
+
+function subTotalCalc() {
+    let subTotal = phnPrice + casePrice;
+    let tax = (5 * subTotal) / 100;
+    let total = subTotal + tax;
+
+    document.getElementById('subtotalValue').innerHTML  = "<strong>$" + subTotal + "</strong>";
+    console.log("subtotal Value::");
+    console.log(subTotal);
+
+    document.getElementById('taxValue').innerHTML  = "<strong>$" + tax + "</strong>";
+    console.log("tax Value::");
+    console.log(tax);
+
+    document.getElementById('totalValue').innerHTML  = "<strong>$" + total + "</strong>";
+    console.log("total Value::");
+    console.log(total);
 }
