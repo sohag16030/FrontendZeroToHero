@@ -17,23 +17,29 @@
 <body>
     <div class="div">
         <div class="container">
-            <div class="col">
-            </div>
-            <div class="col">
-                <div id="calculator">
-                    <div id="display"></div>
-                    <button onclick="appendToDisplay('7')">7</button>
-                    <button onclick="appendToDisplay('8')">8</button>
-                    <button onclick="appendToDisplay('9')">9</button>
-                    <button onclick="appendToDisplay('4')">4</button>
-                    <button onclick="appendToDisplay('5')">5</button>
-                    <button onclick="appendToDisplay('6')">6</button>
-                    <button onclick="appendToDisplay('1')">1</button>
-                    <button onclick="appendToDisplay('2')">2</button>
-                    <button onclick="appendToDisplay('3')">3</button>
-                    <button onclick="appendToDisplay('0')">0</button>
-                    <button onclick="clearDisplay()">C</button>
-                    <button onclick="deleteLast()">DEL</button>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="calculator">
+                        <div id="displayRandomNumber"></div>
+                        <button onclick="appendRandomNumberToDisplay()">7</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="calculator">
+                        <div id="display"></div>
+                        <button onclick="appendToDisplay('7')">7</button>
+                        <button onclick="appendToDisplay('8')">8</button>
+                        <button onclick="appendToDisplay('9')">9</button>
+                        <button onclick="appendToDisplay('4')">4</button>
+                        <button onclick="appendToDisplay('5')">5</button>
+                        <button onclick="appendToDisplay('6')">6</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('3')">3</button>
+                        <button onclick="appendToDisplay('0')">0</button>
+                        <button onclick="clearDisplay()">C</button>
+                        <button onclick="deleteLast()">DEL</button>
+                    </div>
                 </div>
             </div>
         </div>
