@@ -10,7 +10,3 @@ function deleteLast() {
     var display = document.getElementById('display');
     display.textContent = display.textContent.slice(0, -1);
 }
-
-function appendRandomNumberToDisplay(){
-    var randomNumber = 
-}
